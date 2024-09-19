@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enseñar Fonética de Letras</title>
+    <style>
+        body {
+            font-family: Calibri, Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        #letter {
+            font-size: 100px;
+            margin: 20px 0;
+        }
+        #instructions {
+            margin-top: 30px;
+            color: #666;
+        }
+        .option-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .contrast-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .text-size-button {
+            position: fixed;
+            top: 10px;
+            right: 120px;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Presiona una letra para escuchar su fonema o sonido</h1>
+    <div id="letter">-</div>
+
+    <div id="instructions">Presiona <strong>TAB</strong> para alternar entre los modos: "Lectura de letras" y "Lectura de fonemas".</div>
+
+    <button class="contrast-button" onclick="toggleContrast()">Contraste</button>
+    <button class="text-size-button" onclick="toggleTextSize()">Aa</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
